@@ -9,7 +9,8 @@ function AlertClock() {
     
     return (
         <div>
-            <button onClick={mostraOrario}>Cliccami!</button>
+            {/* <button onClick={mostraOrario}>Cliccami!</button> */}
+            <Button onClick={mostraOrario} testo="Cliccami!" />
         </div>
     )
 }
