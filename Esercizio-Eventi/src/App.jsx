@@ -8,7 +8,7 @@ function App() {
         alert(`L'orario attuale è ${orario.toLocaleTimeString()}`)
   }
   
-  return <AlertClock onClick={mostraOrario} />
+  return <AlertClock clickHandler={mostraOrario} />
 }
 
 export default App
