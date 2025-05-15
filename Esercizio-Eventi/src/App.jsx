@@ -6,9 +6,9 @@ function App() {
         const orario = new Date()
 
         alert(`L'orario attuale è ${orario.toLocaleTimeString()}`)
-    }
+  }
   
-    return <AlertClock onClick={mostraOrario} />
+  return <AlertClock onClick={mostraOrario} />
 }
 
 export default App
