@@ -1,7 +1,7 @@
-function AlertClock({ onClick, testo }) {
+function AlertClock({ onClick }) {
     return (
         <div>
-            <button onClick={onClick} testo={testo}>Cliccami!</button>
+            <button onClick={onClick}>Cliccami!</button>
         </div>
     )
 }
