@@ -2,7 +2,13 @@ import './App.css'
 import AlertClock from './AlertClock'
 
 function App() {
-  return <AlertClock />
+  function mostraOrario() {
+        const orario = new Date()
+
+        alert(`L'orario attuale è ${orario.toLocaleTimeString()}`)
+    }
+  
+    return <AlertClock onClick={mostraOrario} testo="Cliccami!" />
 }
 
 export default App

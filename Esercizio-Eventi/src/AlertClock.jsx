@@ -1,16 +1,7 @@
-import Button from "./Button"
-
-function AlertClock() {
-    function mostraOrario() {
-        const orario = new Date()
-
-        alert(`L'orario attuale è ${orario.toLocaleTimeString()}`)
-    }
-    
+function AlertClock({ onClick, testo }) {
     return (
         <div>
-            {/* <button onClick={mostraOrario}>Cliccami!</button> */}
-            <Button onClick={mostraOrario} testo="Cliccami!" />
+            <button onClick={onClick} testo={testo}>Cliccami!</button>
         </div>
     )
 }
