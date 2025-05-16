@@ -1,15 +1,15 @@
 import { useState } from "react"
 import CounterDisplay from "./CounterDisplay"
 
-function Counter({initialValue, value}) {
+function Counter({initialValue, changingValue}) {
     const [counter, setCounter] = useState(0)
 
     function handleCounterIncrement() {
-        setCounter((c) => c + value);
+        setCounter((c) => c + changingValue);
     };
 
     function handleCounterDecrement() {
-        setCounter((c) => c - value);
+        setCounter((c) => c - changingValue);
     };
 
     function handleCounterReset() {
