@@ -30,7 +30,7 @@ function Login({ onLogin }) {
       <label className="label-psw">Password:</label>
       <input
         className="input-form"
-        type="text"
+        type="password"
         name="password"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
