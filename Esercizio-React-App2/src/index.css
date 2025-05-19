@@ -1,0 +1,80 @@
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 300;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.container-chat {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sent {
+  width: 150px;
+  background-color: #0054e9;
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 1px 1px 3px rgb(203, 203, 203);
+  margin-left: 120px;
+  position: relative;
+}
+
+.received {
+  width: 150px;
+  background-color: #f0f0f0;
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 1px 1px 3px rgb(203, 203, 203);
+  position: relative;
+}
+
+.sent::after {
+  content: '';
+  position: absolute;
+  right: -1px;
+  bottom: 1px;
+  width: 10px;
+  height: 10px;
+  background-color: #0054e9;
+  border-bottom-right-radius: 100%;
+  transform: rotate(45deg);
+}
+
+.received::after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  bottom: -1px;
+  width: 10px;
+  height: 10px;
+  background-color: #f0f0f0;
+  border-bottom-left-radius: 100%;
+  transform: rotate(-45deg);
+}
+
+input.barra-msg {
+  width: 300px;
+  height: 30px;
+  border-radius: 50px;
+  margin-top: 20px;
+  border: 1px solid rgb(197, 197, 197);
+}
+
+.send-btn {
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+}
