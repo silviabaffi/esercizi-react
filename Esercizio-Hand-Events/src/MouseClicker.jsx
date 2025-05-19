@@ -3,7 +3,7 @@ function MouseClicker() {
         console.log(e.target.name)
     }
 
-    function printImg(e) {
+    function printImg() {
         const img = document.querySelector("img")
         console.log(img.src)
     }
