@@ -12,19 +12,6 @@ function UncontrolledLogin() {
     console.log("Remember: ", remember);
   }
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    const form = e.target.form;
-
-    const username = form.username.value;
-    const password = form.password.value;
-    const remember = form.remember.checked;
-
-    console.log("Username: ", username);
-    console.log("Password: ", password);
-    console.log("Remember: ", remember);
-  }
-
   function loginWithFormData(e) {
     e.preventDefault();
     const form = e.target.form;
@@ -40,7 +27,7 @@ function UncontrolledLogin() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={onLogin}>
       <label>Username:</label>
       <input
         className="input1"
