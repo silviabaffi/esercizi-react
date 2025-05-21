@@ -62,7 +62,7 @@ function UncontrolledLogin() {
         <label>Remember me</label>
       </div>
 
-      <button type="button" onClick={onLogin}>
+      <button type="submit" onClick={onLogin}>
         Login
       </button>
       <button type="button" onClick={loginWithFormData}>
