@@ -1,4 +1,4 @@
-import { StrictMode, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 
 function MountedComponent() {
   const mountedRef = useRef(false);
