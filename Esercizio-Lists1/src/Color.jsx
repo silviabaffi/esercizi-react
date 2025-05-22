@@ -1,9 +1,6 @@
-function Color() {
-    const color = {id: 1, name: "purple"}
-    
+function Color({color}) {
     return (
         <>
-            <h3>My favorite color is:</h3>
             <li>{color.name}</li>
         </>
     )

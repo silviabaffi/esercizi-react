@@ -1,28 +1,12 @@
-function Colors() {
-  const colors = [
-    {
-      id: 1,
-      name: "purple",
-    },
-    {
-      id: 2,
-      name: "pink",
-    },
-    {
-      id: 3,
-      name: "blue",
-    },
-  ];
+import Color from "./Color";
 
+function Colors({colors}) {
   return (
-    <>
-      <h3>My favorite colors are:</h3>
-      <ul>
-        {colors.map((c, i) => (
-          <li key={`firstColorGroup-${i}`}>{c.name}</li>
-        ))}
-      </ul>
-    </>
+    <ul>
+      {colors.map((color) => (
+        <Color key={color.id} color={color} />
+      ))}
+    </ul>
   );
 }
 
