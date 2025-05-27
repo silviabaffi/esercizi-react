@@ -14,10 +14,13 @@ function Container({ title, children }) {
 
   return (
     <div className="container" style={divStyle}>
-      <h2 className="title">{title}</h2>
-      <button onClick={handleHiddenToggle}>
-        {!hidden ? "Nascondi" : "Visualizza"}
-      </button>
+      <h2
+        className="title"
+        onClick={handleHiddenToggle}
+        style={{ cursor: "pointer" }}
+      >
+        {title}
+      </h2>
       <div className={!hidden ? "children" : "children-hidden"}>{children}</div>
     </div>
   );
