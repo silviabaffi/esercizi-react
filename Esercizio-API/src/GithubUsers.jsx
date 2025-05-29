@@ -7,10 +7,8 @@ function GithubUsers() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    if (input !== "") {
-      setUsers([...users, input]);
-      setInput("");
-    }
+    setUsers([...users, input]);
+    setInput("");
   }
 
   return (
