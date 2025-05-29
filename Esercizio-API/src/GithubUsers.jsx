@@ -8,7 +8,7 @@ function GithubUsers() {
   function handleSubmit(e) {
     e.preventDefault();
     if (input !== "") {
-      setUsers(input);
+      setUsers([...users, input]);
       setInput("");
     }
   }
@@ -25,7 +25,11 @@ function GithubUsers() {
         <button type="submit">Search</button>
       </form>
 
-      <div>{users && <GithubUser username={users} />}</div>
+      <div>
+        {users.map((username, i) => (
+          <GithubUser key={i} username={username} />
+        ))}
+      </div>
     </div>
   );
 }

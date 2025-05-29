@@ -15,9 +15,21 @@ function GithubUser({ username }) {
 
   return (
     <div className="user-container">
-      {user && <div><img src={user.avatar_url} alt="" /></div>}
-      {user && <div className="name"><strong>{user.name}</strong></div>}
-      {user && <div className="username"><small>{user.login}</small></div>}
+      {user && (
+        <div>
+          <img src={user.avatar_url} alt="user-avatar" />
+        </div>
+      )}
+      {user && (
+        <div className="name">
+          <strong>{user.name}</strong>
+        </div>
+      )}
+      {user && (
+        <div className="username">
+          <small>{user.login}</small>
+        </div>
+      )}
     </div>
   );
 }
