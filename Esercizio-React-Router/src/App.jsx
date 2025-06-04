@@ -26,7 +26,7 @@ function App() {
         <Route path="/" element={<Welcome name="Silvia" />} />
         <Route
           path="/counter"
-          element={<Counter initialValue={0} changingValue={1} />}
+          element={<Counter />}
         />
         <Route path="/users" element={<GithubUserList />}>
           <Route index element={<p>Add a user and select it</p>} />

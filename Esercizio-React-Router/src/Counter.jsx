@@ -1,18 +1,18 @@
 import { useState } from "react"
 
-function Counter({initialValue, changingValue}) {
-    const [counter, setCounter] = useState(initialValue)
+function Counter() {
+    const [counter, setCounter] = useState(0)
 
     function handleCounterIncrement() {
-        setCounter((c) => c + changingValue);
+        setCounter((c) => c + 1);
     };
 
     function handleCounterDecrement() {
-        setCounter((c) => c - changingValue);
+        setCounter((c) => c - 1);
     };
 
     function handleCounterReset() {
-        setCounter(initialValue);
+        setCounter(0);
     };
 
     return (
