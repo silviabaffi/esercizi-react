@@ -24,10 +24,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Welcome name="Silvia" />} />
-        <Route
-          path="/counter"
-          element={<Counter />}
-        />
+        <Route path="/counter" element={<Counter />} />
         <Route path="/users" element={<GithubUserList />}>
           <Route index element={<p>Add a user and select it</p>} />
           <Route path=":username" element={<ShowGithubUser />} />
