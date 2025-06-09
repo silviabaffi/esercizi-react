@@ -11,8 +11,6 @@ function AppChat() {
 
   function invia() {
     if (testo !== "") {
-      // const risposta = receivedMsg(testo);
-      // const nuovoMessaggio = { testo, risposta };
       setMessaggi([...messaggi, testo]);
       setTesto("");
     }
@@ -30,8 +28,6 @@ function AppChat() {
         <div key={i}>
           <p className="sent">{msg}</p>
           <p className="received">{data.responses[i].data}</p>
-          {/* <p className="sent">{msg.testo}</p>
-          <p className="received">{msg.risposta}</p> */}
         </div>
       ))}
 
