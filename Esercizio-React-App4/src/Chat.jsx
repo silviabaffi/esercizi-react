@@ -7,7 +7,7 @@ function AppChat() {
 
   const endpoint = "https://mocki.io/v1/6f23619c-3474-4559-b929-0838ca23edcc";
 
-  const { data, error, isLoading } = useSWR(endpoint);
+  const { data } = useSWR(endpoint);
 
   function invia() {
     if (testo !== "") {
